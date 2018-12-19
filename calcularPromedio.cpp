@@ -4,7 +4,8 @@
 using namespace std;
  /* con un valor prefijado*/
  float calcularPromedio() {
-    float cantidad,valor,suma;
+    float valor,suma;
+    int cantidad;
     suma=0;
     cantidad=0;
     float promedio;
@@ -20,8 +21,9 @@ using namespace std;
  }
 
  /* Con Centinela : mientras valor sea menor a cero  */
-int calculoPromedio() {
-    int cantidad,valor,suma;
+float calculoPromedio() {
+    float valor,suma;
+    int cantidad;
     suma=0;
     cantidad =0;
     cout<<"ingrese un valor"<<endl;
