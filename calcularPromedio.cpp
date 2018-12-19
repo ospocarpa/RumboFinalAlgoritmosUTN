@@ -3,19 +3,20 @@
 /*Desarrolle una funcion que calcuule el promedio de varios valores */
 using namespace std;
  /* con un valor prefijado*/
- int calcularPromedio() {
-    int cantidad,valor,suma;
+ float calcularPromedio() {
+    float cantidad,valor,suma;
     suma=0;
-    cantidad=1;
-    int Promedio;
+    cantidad=0;
+    float promedio;
     while(cantidad <10) {
         cout <<"Ingrese un numero"<<endl;
         cin>> valor ; cout<<endl;
-        suma += suma +valor;
+        suma += valor;
         cantidad++;
 
     }
-    return suma/cantidad;
+    promedio= (suma/cantidad);
+    return promedio;
  }
 
  /* Con Centinela : mientras valor sea menor a cero  */
@@ -39,10 +40,9 @@ int calculoPromedio() {
 
 
  int main() {
-  int prom;
+  float prom;
   cout<<"calculamos promedio de 10 numeros"<<endl;
-  prom = calcularPromedio();
-  cout<<prom<<endl;
+  cout<<calcularPromedio()<<endl;
   cout<<"calculamos promedio con centinela"<<endl;
   prom=calculoPromedio();
   cout<<prom<<endl;
